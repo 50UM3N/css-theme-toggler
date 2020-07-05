@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>REV</title>
+</head>
+
+<body class='light'>
+    <div class="nav-container">
+        <div class="left-container">
+            <ul>
+                <li><a href="#">Latest</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li><a href="#">Vue.js</a></li>
+                <li><a href="#">React</a></li>
+                <li><a href="#">Angular</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">HTML</a></li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path
+                            d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z" />
+                    </svg>
+                </li>
+                <li class="drop-down">
+                    <a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                    <ul class="sub-menu">
+                        <li onclick="changeTheme(this.id)" class="theme-btn" id="light"><a href="#">Light</a></li>
+                        <li onclick="changeTheme(this.id)" class="theme-btn" id="dark"><a href="#">Dark</a></li>
+                        <li onclick="changeTheme(this.id)" class="theme-btn" id="dark"><a href="#">TH 1</a></li>
+                        <li onclick="changeTheme(this.id)" class="theme-btn" id="dark"><a href="#">TH 2</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="right-container">
+            <div class="input-container">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                        d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" />
+                </svg>
+                <input type="text" placeholder="live search">
+            </div>
+            <a class="tweeter-icon" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                </svg>
+            </a>
+        </div>
+    </div>
+    <div class="content-container">
+        <div class="clip">
+            <div class="container">
+                <img src="resources/pangolin.svg" alt="">
+                <h1>Front-End Web Development,<br>Chewed Up</h1>
+                <p>Angular 2+, Vue.js, React, Svelte <br> JavaScript, CSS, Node.js...</p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="container">
+                <h2>Alligator.io is joining the DigitalOcean Community!</h2>
+                <p>I started Alligator.io a few years ago as a way to help me learn and share my insights with the
+                    community. At the time, I had no idea it would grow to become the platform it is today, and I
+                    couldn’t be prouder. <br><br>
+
+                    As the platform grew, it welcomed contributors from all backgrounds to publish about what they know
+                    and love with the community.<br><br>
+
+                    Always with a deep love and appreciation for the web platform and the JavaScript ecosystem,
+                    Alligator.io has now grown to be a major source of knowledge for anybody who' s interested in
+                    modern web development.<br><br>
+
+                    I’m excited to announce that starting in May, Alligator.io will be joining the DigitalOcean
+                    Community.<br><br>
+
+                    While the topics covered within each of our sites are different, we share a passion for technical
+                    writing and a common goal of helping developers build, solve problems, and learn.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script defer src="main.js"></script>
+</body>
+
+</html>
