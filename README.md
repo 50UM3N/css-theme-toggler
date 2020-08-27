@@ -1,6 +1,6 @@
 # CSS Theme Toggler
 
-Simple theme toggler inspired by alligator.io using html css and js. And also having store the theme in browser local storage.
+Simple theme toggler inspired by alligator.io using html css and js. And also having store the theme in browser local storage.(not responsive)
 
 # Preview
 
